@@ -55,6 +55,43 @@ footer a {
     border-radius: 50%;
 }
 
+#logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 92px;
+    max-height: 290px;
+}
+
+#search-area {
+    max-height: 160px;
+    padding: 20px;
+}
+
+#search-elements {
+    padding-top: 6px;
+    margin: 0 auto;
+}
+
+#search-elements input {
+    display: block;
+    width: auto;
+    max-width: 584px;
+    margin: auto;
+}
+
+#search-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#language {
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
 #country {
     font-size: 15px;
     border-bottom: 1px solid #dadce0;
