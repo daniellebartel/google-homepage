@@ -41,55 +41,54 @@ footer a {
 
 #navbar {
     display: flex;
-    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     height: 48px;
     padding: 6px;
 }
 
-a.top-left {
+#top-left-links, #top-right-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#top-left-links a {
     margin: 0 5px;
     padding: 5px;
 }
 
-a.top-left:first-of-type {
+#top-left-links a:first-of-type {
     margin-left: 15px;
 }
 
-#top-wrapper {
-    min-width: auto;
-    height: 48px;
-    float: right;
-    margin-left: auto;
+#top-right-links {
+    padding-right: 4px;
 }
 
-#top-right {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    float: right;
-    height: 100%;
-    padding: 0px 4px 0px 32px;
-}
-
-#right-links {
-    display: flex;
-    flex-direction: row;
-    padding-right: 15px;
-}
-
-#link-gmail, #link-images {
+#top-right-links a {
     font-size: 13px;
     padding-left: 15px;
 }
 
+#images-link {
+    padding-right: 15px;
+}
+
 #apps-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 40px;
     height: 40px;
-    background-color: #f2f2f2;
     border-radius: 50%;
     margin: 4px;
+}
+
+#apps-icon img {
+    width: 16px;
+    height: 16px;
 }
 
 #profile-pic {
@@ -98,6 +97,11 @@ a.top-left:first-of-type {
     border-radius: 50%;
     padding: 4px;
     margin: 4px;
+}
+
+#apps-icon:hover, #profile-pic:hover {
+    background-color: rgba(60,64,67,0.08);
+    cursor: pointer;
 }
 
 #logo {
@@ -149,10 +153,12 @@ a.top-left:first-of-type {
 #magnify-icon {
     display: flex;
     align-items: center;
-    background-color: #70757a;
     width: 20px;
     height: 20px;
-    margin: 9px 13px 9px 0px;
+    margin: 7px 13px 9px 0px;
+    font-family: 'Material Icons';
+    font-size: 20px;
+    color: #9aa0a6;
 }
 
 #search-elements input {
@@ -169,12 +175,16 @@ a.top-left:first-of-type {
 #microphone {
     display: flex;
     align-items: center;
-    background-color: #70757a;
+    justify-content: center;
     width: 24px;
     height: 44px;
     padding: 0 8px;
     margin: -5px 0 0 0;
     cursor: pointer;
+}
+
+#microphone img {
+    height: 20px;
 }
 
 #search-buttons {
@@ -217,4 +227,22 @@ a.top-left:first-of-type {
 #country {
     font-size: 15px;
     border-bottom: 1px solid #dadce0;
+    padding: 15px 30px;
+}
+
+#bottom-nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+#bottom-nav a {
+    display: block;
+    padding: 15px;
+}
+
+#bot-nav-left, #bot-nav-right {
+    display: flex;
+    justify-content: space-between;
 }

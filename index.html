@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
 <div id="page-content">
     <nav>
         <div id="navbar">
-            <a class="top-left" href="#">About</a>
-            <a class ="top-left" href="#">Store</a>
-            <div id="top-wrapper">
-                <div id="top-right">
-                    <div id="right-links">
-                        <div id="link-gmail"><a href="#">Gmail</a></div>
-                        <div id="link-images"><a href="#">Images</a></div>
-                    </div>
-                    <div id="apps-icon"></div>
-                    <img id="profile-pic" src="https://lh3.googleusercontent.com/ogw/ADea4I4Exb0xshSLJuq00ZMpFVrOb5b4vWysmURlh-9T9g=s32-c-mo" alt="Profile picture">
-                </div>
+            <div id="top-left-links">
+                <a class="top-left" href="#">About</a>
+                <a class="top-left" href="#">Store</a>
             </div>
+            <div id="top-right-links">
+                    <a href="#">Gmail</a>
+                    <a id="images-link" href="#">Images</a>
+                    <div id="apps-icon"><img src="images/google-apps-icon.svg" alt="Google apps"></div>
+                    <img id="profile-pic" src="images/psyduck-profile.png" alt="Google account">
+             </div>
         </div>
     </nav>
     
         <div id="logo">
-            <img src="https://www.google.ca/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" width="272" height="92" alt="Google">
+            <img src="images/google-logo.png" width="272" height="92" alt="Google">
         </div>
         <div id="search-area">
             <div id="search-elements">
                 <form action="#">
                 <div id="form-field-border">
                     <div id="form-field-elements">
-                        <div id="magnify-icon"></div>
+                        <div id="magnify-icon">
+                            <span class="material-icons-outlined">search</span>
+                        </div>
                         <input type="text">
-                        <div id="microphone"></div>
+                        <div id="microphone"><img src="images/google-mic.svg"></div>
                     </div>
                 </div>
                 <div id="search-buttons">
@@ -47,18 +48,20 @@
         <div id="whtspc">
             <div id="language">Google offered in:  <a href="#">Français</a></div>
         </div>
-   
+
     <footer>
         <div id="country">Canada</div>
-        <div>
-            <a href="#">Advertising</a>
-            <a href="#">Business</a>
-            <a href="#">How Search works</a>
-        </div>
-        <div>
-            <a href="#">Privacy</a>
-            <a href="#">Terms</a>
-            <a href="#">Settings</a>
+        <div id="bottom-nav">
+            <div id="bot-nav-left">
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+                <a href="#">How Search works</a>
+            </div>
+            <div id="bot-nav-right">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Settings</a>
+            </div>
         </div>
     </footer>
 </div>
